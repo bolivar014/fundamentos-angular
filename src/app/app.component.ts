@@ -16,6 +16,16 @@ export class AppComponent {
     avatar: 'https://i.pinimg.com/736x/8a/9d/1b/8a9d1bf56fd1423d7b38401a269eefa1.jpg',
   }
 
+  // Inicializo array
+  names: string[] = [
+    'juan',
+    'jose',
+    'daniel',
+    'luis'
+  ];
+
+  newName = "";
+
   // Evento
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
@@ -37,5 +47,16 @@ export class AppComponent {
     const element  = event.target as HTMLInputElement;
     this.person.name = element.value;
     console.log(element.value);
+  }
+
+  // evento para agregar nombre
+  addName() {
+    this.names.push(this.newName);
+    this.newName = "";
+  }
+
+  // Evento para eliminación de objeto en array
+  deleteName(index: number) {
+    this.names.splice(index, 1);
   }
 }
