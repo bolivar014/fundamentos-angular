@@ -13,6 +13,13 @@ export class AppComponent {
   age = 28;
   img = 'https://i.pinimg.com/736x/8a/9d/1b/8a9d1bf56fd1423d7b38401a269eefa1.jpg';
   btnDisabled = true;
+
+  register = {
+    name: '',
+    email: '',
+    password: ''
+  };
+
   person = {
     name: 'Camilo',
     age: 28,
@@ -91,5 +98,10 @@ export class AppComponent {
   // Evento para eliminación de objeto en array
   deleteName(index: number) {
     this.names.splice(index, 1);
+  }
+
+  // Evento de registro
+  onRegister() {
+    console.log(this.register);
   }
 }
