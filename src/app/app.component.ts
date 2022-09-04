@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+// Importamos interface
+import { Product } from './product.model';
 
 @Component({
   selector: 'app-root',
@@ -26,6 +28,30 @@ export class AppComponent {
 
   newName = "";
 
+  products: Product[] = [
+    {
+      name: 'El mejor juguete',
+      price: 234,
+      image: 'https://github.com/platzi/angular-fundamentals/blob/10-step/src/assets/images/books.jpg',
+      category: 'all'
+    }, {
+      name: 'El mejor ',
+      price: 324,
+      image: 'https://github.com/platzi/angular-fundamentals/blob/10-step/src/assets/images/glasses.jpg',
+    }, {
+      name: 'El  juguete',
+      price: 275,
+      image: 'https://github.com/platzi/angular-fundamentals/blob/10-step/src/assets/images/house.jpg',
+    }, {
+      name: 'mejor juguete',
+      price: 865,
+      image: 'https://github.com/platzi/angular-fundamentals/blob/10-step/src/assets/images/toy.jpg',
+    }, {
+      name: 'El mejor juguete',
+      price: 435,
+      image: 'https://github.com/platzi/angular-fundamentals/blob/10-step/src/assets/images/album.jpg',
+    }
+  ]
   // Evento
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
