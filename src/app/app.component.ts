@@ -15,4 +15,15 @@ export class AppComponent {
     age: 28,
     avatar: 'https://i.pinimg.com/736x/8a/9d/1b/8a9d1bf56fd1423d7b38401a269eefa1.jpg',
   }
+
+  // Evento
+  toggleButton() {
+    this.btnDisabled = !this.btnDisabled;
+
+  }
+
+  // Evento para incrementar edad...
+  increaseAge() {
+    this.person.age += 1;
+  }
 }
