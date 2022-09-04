@@ -8,6 +8,7 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  widthImg = 10;
   name = 'Camilo';
   age = 28;
   img = 'https://i.pinimg.com/736x/8a/9d/1b/8a9d1bf56fd1423d7b38401a269eefa1.jpg';
