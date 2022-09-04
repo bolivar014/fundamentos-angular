@@ -19,11 +19,23 @@ export class AppComponent {
   // Evento
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
-
   }
 
   // Evento para incrementar edad...
   increaseAge() {
     this.person.age += 1;
+  }
+
+  // Evento Scroll
+  onScroll(event: Event) {
+    const element = event.target as HTMLElement;
+    console.log(element.scrollTop);
+  }
+
+  // Evento change
+  changeName(event: Event) {
+    const element  = event.target as HTMLInputElement;
+    this.person.name = element.value;
+    console.log(element.value);
   }
 }
