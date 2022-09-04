@@ -5,7 +5,7 @@ import { Product } from './product.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   name = 'Camilo';
@@ -32,24 +32,24 @@ export class AppComponent {
     {
       name: 'El mejor juguete',
       price: 234,
-      image: 'https://github.com/platzi/angular-fundamentals/blob/10-step/src/assets/images/books.jpg',
+      image: 'https://i.pinimg.com/originals/d3/f0/e4/d3f0e4e5444798b065bde5d1e5d690ad.jpg',
       category: 'all'
     }, {
       name: 'El mejor ',
       price: 324,
-      image: 'https://github.com/platzi/angular-fundamentals/blob/10-step/src/assets/images/glasses.jpg',
+      image: 'https://images2.alphacoders.com/936/936019.png',
     }, {
       name: 'El  juguete',
       price: 275,
-      image: 'https://github.com/platzi/angular-fundamentals/blob/10-step/src/assets/images/house.jpg',
+      image: 'https://image.winudf.com/v2/image/Y29tLnNhZnluYW5hdHN1Lm5hbmF0c3Vfc2NyZWVuXzBfMTUzNjYwNjA3OF8wNDc/screen-0.jpg?fakeurl=1&type=.webp',
     }, {
       name: 'mejor juguete',
       price: 865,
-      image: 'https://github.com/platzi/angular-fundamentals/blob/10-step/src/assets/images/toy.jpg',
+      image: 'https://image.winudf.com/v2/image1/Y29tLmJlc3RXYWxscGFwZXJzLkhRd2FsbHBhcGVyX3NjcmVlbl8wXzE1ODY3NzU4MDdfMDQ0/screen-0.jpg?fakeurl=1&type=.webp',
     }, {
       name: 'El mejor juguete',
       price: 435,
-      image: 'https://github.com/platzi/angular-fundamentals/blob/10-step/src/assets/images/album.jpg',
+      image: 'http://pm1.narvii.com/7001/acf4c5673eacc061bead26f3010c2cb9f9557fd4r1-674-982v2_uhq.jpg',
     }
   ]
   // Evento
